@@ -1,12 +1,9 @@
-<?php
-include('connection.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>DentCare - Dental Clinic Website Template</title>
+    <title>Godavari Public School</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -33,6 +30,11 @@ include('connection.php');
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        body{
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
@@ -88,7 +90,9 @@ include('connection.php');
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.php" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
+            <img src="img/download.jpg" style="width:100px;height:100px;">
+            &nbsp;&nbsp;
+            <h1 class="m-0 text-primary"style="float:right;"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -97,41 +101,42 @@ include('connection.php');
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.php" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <a href="about.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
                     <div class="dropdown-menu m-0">
                         <a href="principalDesk.html" class="dropdown-item">Principal Desk</a>
                         <a href="Trustee.html" class="dropdown-item">Trustee</a>
                         <a href="Faculty.html" class="dropdown-item">Faculty</a>
+                       
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Facilities</a>
                     <div class="dropdown-menu m-0">
                         <a href="Sciencelab2.html" class="dropdown-item">Science Lab</a>
-                        <a href="Computerlab.html" class="dropdown-item">Computer Lab</a>
-                        <a href="library1.html" class="dropdown-item">Libraray</a>
+                        <a href="Computerlab.php" class="dropdown-item">Computer Lab</a>
+                        <a href="library1.html" class="dropdown-item">Library</a>
                         <a href="Playarea1.html" class="dropdown-item">Play Area</a>
                         <a href="Smartclasses.html" class="dropdown-item">Smart Classes</a>
-                        <a href="busfacility1.html" class="dropdown-item">Bus Facility</a>
+                        <a href="busfacility1.php" class="dropdown-item">Bus Facility</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Achivements</a>
                     <div class="dropdown-menu m-0">
                         <a href="sports.html" class="dropdown-item">Sports Achivements</a>
-                        <a href="academics.html" class="dropdown-item">Academics Achivements</a>
+                        <a href="academics.php" class="dropdown-item">Academics Achivements</a>
                         <a href="other.html" class="dropdown-item">Other Achivements</a>
                     </div>
                 </div>
 
                 <a href="gallery2.html" class="nav-item nav-link active" style="color:black">Gallery</a>
-                <a href="loginforLearning.php" class="nav-item nav-link active" style="color:black">Learning</a>
+                <a href="Learning.php" class="nav-item nav-link active" style="color:black">Learning</a>
                 <a href="login.php" class="nav-item nav-link active" style="color:black">Parent Login</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <div class="dropdown-menu m-0">
                         <a href="textbook.html" class="dropdown-item">TextBook List</a>
-                        <a href="academiccalendar1.html" class="dropdown-item">Academic<br> Calendar</a>
+                        <a href="academiccalendar1.php" class="dropdown-item">Academic <br>Calendar</a>
                         <a href="contact.php" class="dropdown-item">Contact Us</a>
                     </div>
                 </div>
@@ -139,130 +144,158 @@ include('connection.php');
         </div>
     </nav>
     <!-- Navbar End -->
-  <!-- Full Screen Search Start -->
-  <div class="modal fade" id="searchModal" tabindex="-1">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-            <div class="modal-header border-0">
-                <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex align-items-center justify-content-center">
-                <div class="input-group" style="max-width: 600px;">
-                    <input type="text" class="form-control bg-transparent border-primary p-3"
-                        placeholder="Type search keyword">
-                    <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<style>
-    .mcontent {
-  background-color: lightgrey;
-  width: 600px;
-  height: 800px;
-  border: 20px solid green;
-  padding: 50px;
-  margin: 20px;
-}
+    <!-- Full Screen Search End -->
 
-.form-container input[type=email] {
-         /*width: 100%;*/
-         width: 300px;
-        padding: 9px;
-        height: 70px;
-        /*margin: 20px 0 40px 0;*/
-         border: none;
-          background: #f1f1f1;
-          border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-         
-          
-           }
-           .form-container input[type=email]:hover{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .form-container label{
-            font-size: 26px;
-           }
-           .sbtn{
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(151, 151, 16, 1);
-            
-           }
-           .sbtn:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .sbtn2{
-            color:#fff;
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(188, 44, 10, 1);
-            
-           }
-           .sbtn2:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           textarea{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-</style>
-<!-- Full Screen Search End -->
-<center><div class="mcontent">
-    <form action="#" method="post">
-    <div class="form-container">
-<center><label><b>Enter Student Email: &nbsp;</b></label><br><br>
-    <input type="email" placeholder="Enter Student email" name="name" required><br><br><br>
 
-    <label><b>Parent Complaint Box for any Issue:- &nbsp;</b></label><br>
-    <textarea name="comp" id="" cols="30" rows="10" placeholder="Type Here"></textarea><br><br>
-
-    <input type="submit"  name="searchdata" value="Send" class="sbtn2">&nbsp;&nbsp;
-    <!--<input type="submit"  name="response" value="Response" class="sbtn2">--></center>
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 hero-header mb-5">
+        <div class="row py-3">
+            <div class="col-12 text-center">
+                <h1 class="display-3 text-white animated zoomIn" style="margin-left:700px;">Faculty</h1>
+                <a href="" class="h4 text-white" style="margin-left:700px;">About Us</a>
+                <i class="far fa-circle text-white px-2"></i>
+                <a href="" class="h4 text-white">Faculty</a>
+            </div>
         </div>
-</form>
-    </div></center>
+    </div>
+    <!-- Hero End -->
 
 
-<!-- Newsletter Start -->
+    <!-- Team Start -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="section-title bg-light rounded h-100 p-5">
+                        <h5 class="position-relative d-inline-block text-primary text-uppercase">Our Faculty</h5>
+                        <h1 class="display-6 mb-4">Meet Our Experienced Teachers</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <img class="img-fluid rounded-top w-100" src="img/teach1.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Dr. Rohini Chimney</h4>
+                            <p class="text-primary mb-0">PHD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <img class="img-fluid rounded-top w-100" src="img/teach2.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Mr. Anand Verma</h4>
+                            <p class="text-primary mb-0">M.A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <img class="img-fluid rounded-top w-100" src="img/teach3.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Mrs. Savita Varshney</h4>
+                            <p class="text-primary mb-0">B.A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <img class="img-fluid rounded-top w-100" src="img/teach4.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Mr. Anil Bhavsar</h4>
+                            <p class="text-primary mb-0">M.A</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item">
+                        <div class="position-relative rounded-top" style="z-index: 1;">
+                            <img class="img-fluid rounded-top w-100" src="img/teach5.jpg" alt="">
+                            <div class="position-absolute top-100 start-50 translate-middle bg-light rounded p-2 d-flex">
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                                <a class="btn btn-primary btn-square m-1" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-text position-relative bg-light text-center rounded-bottom p-4 pt-5">
+                            <h4 class="mb-2">Mrs. Veena Bhavtankar</h4>
+                            <p class="text-primary mb-0">M.A</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
 
-<!-- Newsletter End -->
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
-  <div class="container pt-5">
+    <!-- Team End -->
+    
+
+    <!-- Newsletter Start -->
+   
+    <!-- Newsletter End -->
+    
+
+     <!-- Footer Start -->
+     <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
+        <div class="container pt-5">
             <div class="row g-5 pt-4">
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="aboutus.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="aboutus.php"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
                         <a class="text-light mb-2" href="Sciencelab2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Facilities</a>
-                        <a class="text-light mb-2" href="academics.html"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
+                        <a class="text-light mb-2" href="academics.php"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
                         <a class="text-light" href="gallery2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
                        
                     </div>
@@ -273,7 +306,7 @@ include('connection.php');
                         <a class="text-light mb-2" href="loginforLearning.php"><i class="bi bi-arrow-right text-primary me-2"></i>Learning</a>
                         <a class="text-light mb-2" href="parent.php"><i class="bi bi-arrow-right text-primary me-2"></i>Parent Login</a>
                         <a class="text-light mb-2" href="textbook.html"><i class="bi bi-arrow-right text-primary me-2"></i>Textbook List</a>
-                        <a class="text-light mb-2" href="academiccalendar.html"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
+                        <a class="text-light mb-2" href="academiccalendar.php"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
                         <a class="text-light" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                     </div>
                 </div>
@@ -308,7 +341,6 @@ include('connection.php');
         </div>
     </div>
     <!-- Footer End -->
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -329,26 +361,5 @@ include('connection.php');
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
-<?php
-if(isset($_POST['searchdata']))
-{
-$name = $_POST['name'];
-$comp = $_POST['comp'];
-
-
-$sql = "INSERT INTO complaint (name,comp) VALUES ('$name', '$comp')";
-
-if (mysqli_query($con, $sql)) 
-{
- echo "<script> alert('New record created successfully'); </script>";
-} 
-else 
-{
-  echo "Error: " . $sql . "<br>" . mysqli_error($con);
-}
-
-mysqli_close($con);
-
-}
-?>

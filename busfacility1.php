@@ -1,12 +1,9 @@
-<?php
-include('connection.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>DentCare - Dental Clinic Website Template</title>
+    <title>Bus Facility</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -88,7 +85,9 @@ include('connection.php');
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.php" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
+            <img src="img/download.jpg" style="width:100px;height:100px;">
+            &nbsp;&nbsp;
+            <h1 class="m-0 text-primary" style="float:right;"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -97,11 +96,12 @@ include('connection.php');
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.php" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <a href="about.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
                     <div class="dropdown-menu m-0">
                         <a href="principalDesk.html" class="dropdown-item">Principal Desk</a>
                         <a href="Trustee.html" class="dropdown-item">Trustee</a>
                         <a href="Faculty.html" class="dropdown-item">Faculty</a>
+                       
                     </div>
                 </div>
                 <div class="nav-item dropdown">
@@ -109,7 +109,7 @@ include('connection.php');
                     <div class="dropdown-menu m-0">
                         <a href="Sciencelab2.html" class="dropdown-item">Science Lab</a>
                         <a href="Computerlab.html" class="dropdown-item">Computer Lab</a>
-                        <a href="library1.html" class="dropdown-item">Libraray</a>
+                        <a href="library1.html" class="dropdown-item">Library</a>
                         <a href="Playarea1.html" class="dropdown-item">Play Area</a>
                         <a href="Smartclasses.html" class="dropdown-item">Smart Classes</a>
                         <a href="busfacility1.html" class="dropdown-item">Bus Facility</a>
@@ -119,7 +119,7 @@ include('connection.php');
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Achivements</a>
                     <div class="dropdown-menu m-0">
                         <a href="sports.html" class="dropdown-item">Sports Achivements</a>
-                        <a href="academics.html" class="dropdown-item">Academics Achivements</a>
+                        <a href="academics.php" class="dropdown-item">Academics Achivements</a>
                         <a href="other.html" class="dropdown-item">Other Achivements</a>
                     </div>
                 </div>
@@ -131,7 +131,7 @@ include('connection.php');
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <div class="dropdown-menu m-0">
                         <a href="textbook.html" class="dropdown-item">TextBook List</a>
-                        <a href="academiccalendar1.html" class="dropdown-item">Academic<br> Calendar</a>
+                        <a href="academiccalendar1.php" class="dropdown-item">Academic<br> Calendar</a>
                         <a href="contact.php" class="dropdown-item">Contact Us</a>
                     </div>
                 </div>
@@ -139,6 +139,116 @@ include('connection.php');
         </div>
     </nav>
     <!-- Navbar End -->
+
+<!--info-->
+<div class="container-fluid p-0">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/bbbb.jpg" alt="Image" width="300" height="1000">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="background-color: #0000008a;">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase mb-3 animated slideInDown" style="margin-top: -150px;">Learning Today Leading
+                            Tomorrow</h5>
+                        <h3 class="display-1 text-white mb-md-4 animated zoomIn">Bus Facility</h3>
+                            <div style="text-align: center;">
+                                <h1></h1>
+                             </div><br><br>
+                             <div style="border: dotted; border-radius: 20px;margin: 10px;">
+                                <div>
+                                    <p style="margin-left:25px; margin-top:20px;">
+                                        Transport Facility<br>
+                                        Godavri Public School has a transport facility which comprises of a fleet of well-maintained buses, equipped with Global Positioning System [GPS] real time tracking and CCTV cameras as per government guidelines. The buses have been fitted with speed governors too. Each bus trip has a responsible school attendant on board to ensure safety of children. The bus staff have been sensitised to the school’s stance on student safety.
+
+                    
+                                    </p>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+</div>
+        <br>
+<div>
+   <center><h3>Bus Facility</h3></center> <br><br>
+</div>
+     
+        <div class="row">
+            <div class="column">
+              <img src="img/bbb2.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/bbb3.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/bbb4.jpg" alt="Mountains" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img/bbb5.jpg" alt="Mountains" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="img/bbb6.jpg" alt="Mountains" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="img/bbb7.jpg" alt="Mountains" style="width:100%">
+              </div>
+          </div>
+         <br><br><br><br><br>
+          <style>
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+          </style>
+
+
+
+          <style>
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+          </style>
+
+
   <!-- Full Screen Search Start -->
   <div class="modal fade" id="searchModal" tabindex="-1">
     <div class="modal-dialog modal-fullscreen">
@@ -157,157 +267,81 @@ include('connection.php');
         </div>
     </div>
 </div>
-<style>
-    .mcontent {
-  background-color: lightgrey;
-  width: 600px;
-  height: 800px;
-  border: 20px solid green;
-  padding: 50px;
-  margin: 20px;
-}
-
-.form-container input[type=email] {
-         /*width: 100%;*/
-         width: 300px;
-        padding: 9px;
-        height: 70px;
-        /*margin: 20px 0 40px 0;*/
-         border: none;
-          background: #f1f1f1;
-          border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-         
-          
-           }
-           .form-container input[type=email]:hover{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .form-container label{
-            font-size: 26px;
-           }
-           .sbtn{
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(151, 151, 16, 1);
-            
-           }
-           .sbtn:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .sbtn2{
-            color:#fff;
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(188, 44, 10, 1);
-            
-           }
-           .sbtn2:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           textarea{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-</style>
 <!-- Full Screen Search End -->
-<center><div class="mcontent">
-    <form action="#" method="post">
-    <div class="form-container">
-<center><label><b>Enter Student Email: &nbsp;</b></label><br><br>
-    <input type="email" placeholder="Enter Student email" name="name" required><br><br><br>
 
-    <label><b>Parent Complaint Box for any Issue:- &nbsp;</b></label><br>
-    <textarea name="comp" id="" cols="30" rows="10" placeholder="Type Here"></textarea><br><br>
-
-    <input type="submit"  name="searchdata" value="Send" class="sbtn2">&nbsp;&nbsp;
-    <!--<input type="submit"  name="response" value="Response" class="sbtn2">--></center>
-        </div>
-</form>
-    </div></center>
 
 
 <!-- Newsletter Start -->
-
+<!--<div class="container-fluid position-relative pt-5 wow fadeInUp" data-wow-delay="0.1s"
+style="z-index: 1;">
+<div class="container">
+    <div class="bg-primary p-5">
+        <form class="mx-auto" style="max-width: 600px;">
+            <div class="input-group">
+                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
+                <button class="btn btn-dark px-4">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>-->
 <!-- Newsletter End -->
   <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
-  <div class="container pt-5">
-            <div class="row g-5 pt-4">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="aboutus.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="Sciencelab2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Facilities</a>
-                        <a class="text-light mb-2" href="academics.html"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
-                        <a class="text-light" href="gallery2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
-                       
-                    </div>
+  <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s">
+    <div class="container pt-5">
+        <div class="row g-5 pt-4">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-light mb-2" href="aboutus.php"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-light mb-2" href="Sciencelab2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Facilities</a>
+                    <a class="text-light mb-2" href="academics.php"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
+                    <a class="text-light" href="gallery2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
+                   
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="loginforLearning.php"><i class="bi bi-arrow-right text-primary me-2"></i>Learning</a>
-                        <a class="text-light mb-2" href="parent.php"><i class="bi bi-arrow-right text-primary me-2"></i>Parent Login</a>
-                        <a class="text-light mb-2" href="textbook.html"><i class="bi bi-arrow-right text-primary me-2"></i>Textbook List</a>
-                        <a class="text-light mb-2" href="academiccalendar.html"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
-                        <a class="text-light" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="loginforLearning.php"><i class="bi bi-arrow-right text-primary me-2"></i>Learning</a>
+                    <a class="text-light mb-2" href="parent.php"><i class="bi bi-arrow-right text-primary me-2"></i>Parent Login</a>
+                    <a class="text-light mb-2" href="textbook.html"><i class="bi bi-arrow-right text-primary me-2"></i>Textbook List</a>
+                    <a class="text-light mb-2" href="academiccalendar.php"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
+                    <a class="text-light" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Waluj,Aurangabad,431001</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>godavari@.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://twitter.com/explore"><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.instagram.com/"><i class="fab fa-instagram fw-normal"></i></a>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Get In Touch</h3>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Waluj,Aurangabad,431001</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>godavari@.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Follow Us</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://twitter.com/explore"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.instagram.com/"><i class="fab fa-instagram fw-normal"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-light py-4" style="background: #051225;">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Godavari Public School</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by: <a class="text-white border-bottom" href="https://htmlcodex.com">Mayuri,Snehal & Janhavi</a></p>
-                </div>
+</div>
+<div class="container-fluid text-light py-4" style="background: #051225;">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Godavari Public School</a>. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by: <a class="text-white border-bottom" href="https://htmlcodex.com">Mayuri,Snehal & Janhavi</a></p>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
@@ -330,25 +364,3 @@ include('connection.php');
     <script src="js/main.js"></script>
 </body>
 </html>
-<?php
-if(isset($_POST['searchdata']))
-{
-$name = $_POST['name'];
-$comp = $_POST['comp'];
-
-
-$sql = "INSERT INTO complaint (name,comp) VALUES ('$name', '$comp')";
-
-if (mysqli_query($con, $sql)) 
-{
- echo "<script> alert('New record created successfully'); </script>";
-} 
-else 
-{
-  echo "Error: " . $sql . "<br>" . mysqli_error($con);
-}
-
-mysqli_close($con);
-
-}
-?>

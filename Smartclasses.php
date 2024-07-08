@@ -1,12 +1,9 @@
-<?php
-include('connection.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>DentCare - Dental Clinic Website Template</title>
+    <title>Smart Classes</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -16,7 +13,9 @@ include('connection.php');
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -33,6 +32,7 @@ include('connection.php');
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -88,7 +88,9 @@ include('connection.php');
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.php" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
+            <img src="img/download.jpg" style="width:100px;height:100px;">
+            &nbsp;&nbsp;
+            <h1 class="m-0 text-primary"style="float:right;"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -97,41 +99,41 @@ include('connection.php');
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.php" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <a href="about.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
                     <div class="dropdown-menu m-0">
-                        <a href="principalDesk.html" class="dropdown-item">Principal Desk</a>
+                        <a href="principalDesk.php" class="dropdown-item">Principal Desk</a>
                         <a href="Trustee.html" class="dropdown-item">Trustee</a>
-                        <a href="Faculty.html" class="dropdown-item">Faculty</a>
+                        <a href="Faculty.php" class="dropdown-item">Faculty</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Facilities</a>
                     <div class="dropdown-menu m-0">
-                        <a href="Sciencelab2.html" class="dropdown-item">Science Lab</a>
-                        <a href="Computerlab.html" class="dropdown-item">Computer Lab</a>
-                        <a href="library1.html" class="dropdown-item">Libraray</a>
+                        <a href="Sciencelab.html" class="dropdown-item">Science Lab</a>
+                        <a href="Computerlab.php" class="dropdown-item">Computer Lab</a>
+                        <a href="library1.php" class="dropdown-item">Libraray</a>
                         <a href="Playarea1.html" class="dropdown-item">Play Area</a>
                         <a href="Smartclasses.html" class="dropdown-item">Smart Classes</a>
-                        <a href="busfacility1.html" class="dropdown-item">Bus Facility</a>
+                        <a href="busfacility1.php" class="dropdown-item">Bus Facility</a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Achivements</a>
                     <div class="dropdown-menu m-0">
                         <a href="sports.html" class="dropdown-item">Sports Achivements</a>
-                        <a href="academics.html" class="dropdown-item">Academics Achivements</a>
-                        <a href="other.html" class="dropdown-item">Other Achivements</a>
+                        <a href="academics.php" class="dropdown-item">Academics Achivements</a>
+                        <a href="other.php" class="dropdown-item">Other Achivements</a>
                     </div>
                 </div>
 
-                <a href="gallery2.html" class="nav-item nav-link active" style="color:black">Gallery</a>
+                <a href="gallery2.php" class="nav-item nav-link active" style="color:black">Gallery</a>
                 <a href="loginforLearning.php" class="nav-item nav-link active" style="color:black">Learning</a>
                 <a href="login.php" class="nav-item nav-link active" style="color:black">Parent Login</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">More</a>
                     <div class="dropdown-menu m-0">
                         <a href="textbook.html" class="dropdown-item">TextBook List</a>
-                        <a href="academiccalendar1.html" class="dropdown-item">Academic<br> Calendar</a>
+                        <a href="academiccalendar1.php" class="dropdown-item">Academic <br>Calendar</a>
                         <a href="contact.php" class="dropdown-item">Contact Us</a>
                     </div>
                 </div>
@@ -139,131 +141,152 @@ include('connection.php');
         </div>
     </nav>
     <!-- Navbar End -->
-  <!-- Full Screen Search Start -->
-  <div class="modal fade" id="searchModal" tabindex="-1">
-    <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-            <div class="modal-header border-0">
-                <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-            </div>
-            <div class="modal-body d-flex align-items-center justify-content-center">
-                <div class="input-group" style="max-width: 600px;">
-                    <input type="text" class="form-control bg-transparent border-primary p-3"
-                        placeholder="Type search keyword">
-                    <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3"
+                            placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<style>
-    .mcontent {
-  background-color: lightgrey;
-  width: 600px;
-  height: 800px;
-  border: 20px solid green;
-  padding: 50px;
-  margin: 20px;
-}
+    <!-- Full Screen Search End -->
+<!--info-->
+<div class="container-fluid p-0">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="w-100" src="img/smt.jpg" alt="Image" width="300" height="1000">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center" style="background-color: #0000008a;">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h5 class="text-white text-uppercase mb-3 animated slideInDown" style="margin-top: -150px;">Learning Today Leading
+                            Tomorrow</h5>
+                        <h3 class="display-1 text-white mb-md-4 animated zoomIn">Smart Classes</h3>
+                            <div style="text-align: center;">
+                                <h1></h1>
+                             </div><br><br>
+                             <div style="border: dotted; border-radius: 20px;margin: 10px;">
+                                <div>
+                                    <p style="margin-left:25px; margin-top:20px;">
+                                        INNOVATION TO DIGITAL EDUCATION<br>
+First step in this direction was installation of Tata Class edge technology in the year 2017-18 . At present we have Tata Class edge outlet installed in 21 classrooms. This has rendered both Teaching and learning more meaningful and interesting. Its multiple learning experience model is developed on premise that when students use multiple senses and are involved in variety of plan activities. They will be better involved in learning process and will retain the concepts better.
 
-.form-container input[type=email] {
-         /*width: 100%;*/
-         width: 300px;
-        padding: 9px;
-        height: 70px;
-        /*margin: 20px 0 40px 0;*/
-         border: none;
-          background: #f1f1f1;
-          border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-         
-          
-           }
-           .form-container input[type=email]:hover{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .form-container label{
-            font-size: 26px;
-           }
-           .sbtn{
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(151, 151, 16, 1);
-            
-           }
-           .sbtn:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .sbtn2{
-            color:#fff;
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(188, 44, 10, 1);
-            
-           }
-           .sbtn2:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           textarea{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-</style>
-<!-- Full Screen Search End -->
-<center><div class="mcontent">
-    <form action="#" method="post">
-    <div class="form-container">
-<center><label><b>Enter Student Email: &nbsp;</b></label><br><br>
-    <input type="email" placeholder="Enter Student email" name="name" required><br><br><br>
 
-    <label><b>Parent Complaint Box for any Issue:- &nbsp;</b></label><br>
-    <textarea name="comp" id="" cols="30" rows="10" placeholder="Type Here"></textarea><br><br>
-
-    <input type="submit"  name="searchdata" value="Send" class="sbtn2">&nbsp;&nbsp;
-    <!--<input type="submit"  name="response" value="Response" class="sbtn2">--></center>
+                    
+                                    </p>
+                                </div>
+                    </div>
+                </div>
+            </div>
         </div>
-</form>
-    </div></center>
+        </div>
+        </div>
+</div>
+        <br>
+<div>
+   <center><h3>Smart Classes</h3></center> 
+</div>
+     
+        <div class="row">
+            <div class="column">
+              <img src="img/smart1.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/smart2.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/smart4.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
 
+          <style>
+            body{
+                height: auto;
+            }
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-<!-- Newsletter Start -->
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+          </style>
 
-<!-- Newsletter End -->
-  <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
-  <div class="container pt-5">
+          <div class="row">
+            <div class="column">
+              <img src="img/smart6.jpg" alt="Snow" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/smart7.jpg" alt="Forest" style="width:100%">
+            </div>
+            <div class="column">
+              <img src="img/smart9.jpg" alt="Mountains" style="width:100%">
+            </div>
+          </div>
+
+          <style>
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+          </style>
+    <!-- Newsletter Start -->
+    
+    <!-- Newsletter End -->
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s">
+        <div class="container pt-5">
             <div class="row g-5 pt-4">
                 <div class="col-lg-3 col-md-6">
                     <h3 class="text-white mb-4">Quick Links</h3>
                     <div class="d-flex flex-column justify-content-start">
                         <a class="text-light mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="aboutus.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="Sciencelab2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Facilities</a>
-                        <a class="text-light mb-2" href="academics.html"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
-                        <a class="text-light" href="gallery2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
+                        <a class="text-light mb-2" href="aboutus.php"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                        <a class="text-light mb-2" href="Sciencelab2.php"><i class="bi bi-arrow-right text-primary me-2"></i>Facilities</a>
+                        <a class="text-light mb-2" href="academics.php"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
+                        <a class="text-light" href="gallery2.php"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
                        
                     </div>
                 </div>
@@ -273,7 +296,7 @@ include('connection.php');
                         <a class="text-light mb-2" href="loginforLearning.php"><i class="bi bi-arrow-right text-primary me-2"></i>Learning</a>
                         <a class="text-light mb-2" href="parent.php"><i class="bi bi-arrow-right text-primary me-2"></i>Parent Login</a>
                         <a class="text-light mb-2" href="textbook.html"><i class="bi bi-arrow-right text-primary me-2"></i>Textbook List</a>
-                        <a class="text-light mb-2" href="academiccalendar.html"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
+                        <a class="text-light mb-2" href="academiccalendar.php"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
                         <a class="text-light" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                     </div>
                 </div>
@@ -308,7 +331,6 @@ include('connection.php');
         </div>
     </div>
     <!-- Footer End -->
-
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -329,26 +351,5 @@ include('connection.php');
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </body>
+
 </html>
-<?php
-if(isset($_POST['searchdata']))
-{
-$name = $_POST['name'];
-$comp = $_POST['comp'];
-
-
-$sql = "INSERT INTO complaint (name,comp) VALUES ('$name', '$comp')";
-
-if (mysqli_query($con, $sql)) 
-{
- echo "<script> alert('New record created successfully'); </script>";
-} 
-else 
-{
-  echo "Error: " . $sql . "<br>" . mysqli_error($con);
-}
-
-mysqli_close($con);
-
-}
-?>

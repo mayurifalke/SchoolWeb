@@ -1,15 +1,18 @@
-<?php
-include('connection.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>DentCare - Dental Clinic Website Template</title>
+    <title>Academic Calendar</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
+
+    <link rel="stylesheet" href="evo-calendar.min.css">
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -34,7 +37,13 @@ include('connection.php');
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
-
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+</style>
 <body>
     <!-- Spinner Start -->
     <div id="spinner"
@@ -88,7 +97,9 @@ include('connection.php');
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow-sm px-5 py-3 py-lg-0">
         <a href="index.php" class="navbar-brand p-0">
-            <h1 class="m-0 text-primary"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
+            <img src="img/download.jpg" style="width:100px;height:100px;">
+            &nbsp;&nbsp;
+            <h1 class="m-0 text-primary"style="float:right;"><!--<i class="fa fa-tooth me-2"></i>-->Godavari Public School</h1>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -97,11 +108,12 @@ include('connection.php');
             <div class="navbar-nav ms-auto py-0">
                 <a href="index.php" class="nav-item nav-link active">Home</a>
                 <div class="nav-item dropdown">
-                    <a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
+                    <a href="about.php" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About Us</a>
                     <div class="dropdown-menu m-0">
                         <a href="principalDesk.html" class="dropdown-item">Principal Desk</a>
                         <a href="Trustee.html" class="dropdown-item">Trustee</a>
                         <a href="Faculty.html" class="dropdown-item">Faculty</a>
+                       
                     </div>
                 </div>
                 <div class="nav-item dropdown">
@@ -109,9 +121,9 @@ include('connection.php');
                     <div class="dropdown-menu m-0">
                         <a href="Sciencelab2.html" class="dropdown-item">Science Lab</a>
                         <a href="Computerlab.html" class="dropdown-item">Computer Lab</a>
-                        <a href="library1.html" class="dropdown-item">Libraray</a>
+                        <a href="library1.html" class="dropdown-item">Library</a>
                         <a href="Playarea1.html" class="dropdown-item">Play Area</a>
-                        <a href="Smartclasses.html" class="dropdown-item">Smart Classes</a>
+                        <a href="smartclass1.html" class="dropdown-item">Smart Classes</a>
                         <a href="busfacility1.html" class="dropdown-item">Bus Facility</a>
                     </div>
                 </div>
@@ -157,96 +169,11 @@ include('connection.php');
         </div>
     </div>
 </div>
-<style>
-    .mcontent {
-  background-color: lightgrey;
-  width: 600px;
-  height: 800px;
-  border: 20px solid green;
-  padding: 50px;
-  margin: 20px;
-}
-
-.form-container input[type=email] {
-         /*width: 100%;*/
-         width: 300px;
-        padding: 9px;
-        height: 70px;
-        /*margin: 20px 0 40px 0;*/
-         border: none;
-          background: #f1f1f1;
-          border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-         
-          
-           }
-           .form-container input[type=email]:hover{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .form-container label{
-            font-size: 26px;
-           }
-           .sbtn{
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(151, 151, 16, 1);
-            
-           }
-           .sbtn:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           .sbtn2{
-            color:#fff;
-            width: 200px;
-            height: 50px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-  background-color: rgba(188, 44, 10, 1);
-            
-           }
-           .sbtn2:hover{
-            background-color: rgba(17, 31, 91, 0.8);
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-           textarea{
-            border: 1px solid;
-  padding: 10px;
-  box-shadow: 5px 10px 8px #888888;
-           }
-</style>
 <!-- Full Screen Search End -->
-<center><div class="mcontent">
-    <form action="#" method="post">
-    <div class="form-container">
-<center><label><b>Enter Student Email: &nbsp;</b></label><br><br>
-    <input type="email" placeholder="Enter Student email" name="name" required><br><br><br>
+<div class="hero">
+<div id="calendar"></div>
 
-    <label><b>Parent Complaint Box for any Issue:- &nbsp;</b></label><br>
-    <textarea name="comp" id="" cols="30" rows="10" placeholder="Type Here"></textarea><br><br>
-
-    <input type="submit"  name="searchdata" value="Send" class="sbtn2">&nbsp;&nbsp;
-    <!--<input type="submit"  name="response" value="Response" class="sbtn2">--></center>
-        </div>
-</form>
-    </div></center>
+</div>
 
 
 <!-- Newsletter Start -->
@@ -254,61 +181,60 @@ include('connection.php');
 <!-- Newsletter End -->
   <!-- Footer Start -->
   <div class="container-fluid bg-dark text-light py-5 wow fadeInUp" data-wow-delay="0.3s" style="margin-top: -75px;">
-  <div class="container pt-5">
-            <div class="row g-5 pt-4">
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                        <a class="text-light mb-2" href="aboutus.html"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                        <a class="text-light mb-2" href="Sciencelab2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Facilities</a>
-                        <a class="text-light mb-2" href="academics.html"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
-                        <a class="text-light" href="gallery2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
-                       
-                    </div>
+    <div class="container pt-5">
+        <div class="row g-5 pt-4">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="index.php"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-light mb-2" href="aboutus.php"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-light mb-2" href="Sciencelab2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Facilities</a>
+                    <a class="text-light mb-2" href="academics.html"><i class="bi bi-arrow-right text-primary me-2"></i>Achivements</a>
+                    <a class="text-light" href="gallery2.html"><i class="bi bi-arrow-right text-primary me-2"></i>Gallery</a>
+                   
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Quick Links</h3>
-                    <div class="d-flex flex-column justify-content-start">
-                        <a class="text-light mb-2" href="loginforLearning.php"><i class="bi bi-arrow-right text-primary me-2"></i>Learning</a>
-                        <a class="text-light mb-2" href="parent.php"><i class="bi bi-arrow-right text-primary me-2"></i>Parent Login</a>
-                        <a class="text-light mb-2" href="textbook.html"><i class="bi bi-arrow-right text-primary me-2"></i>Textbook List</a>
-                        <a class="text-light mb-2" href="academiccalendar.html"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
-                        <a class="text-light" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-light mb-2" href="loginforLearning.php"><i class="bi bi-arrow-right text-primary me-2"></i>Learning</a>
+                    <a class="text-light mb-2" href="parent.php"><i class="bi bi-arrow-right text-primary me-2"></i>Parent Login</a>
+                    <a class="text-light mb-2" href="textbook.html"><i class="bi bi-arrow-right text-primary me-2"></i>Textbook List</a>
+                    <a class="text-light mb-2" href="academiccalendar.html"><i class="bi bi-arrow-right text-primary me-2"></i>Academic Calendar</a>
+                    <a class="text-light" href="contact.php"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Get In Touch</h3>
-                    <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Waluj,Aurangabad,431001</p>
-                    <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>godavari@.com</p>
-                    <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h3 class="text-white mb-4">Follow Us</h3>
-                    <div class="d-flex">
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://twitter.com/explore"><i class="fab fa-twitter fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                        <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.instagram.com/"><i class="fab fa-instagram fw-normal"></i></a>
-                    </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Get In Touch</h3>
+                <p class="mb-2"><i class="bi bi-geo-alt text-primary me-2"></i>Waluj,Aurangabad,431001</p>
+                <p class="mb-2"><i class="bi bi-envelope-open text-primary me-2"></i>godavari@.com</p>
+                <p class="mb-0"><i class="bi bi-telephone text-primary me-2"></i>+012 345 67890</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Follow Us</h3>
+                <div class="d-flex">
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://twitter.com/explore"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.facebook.com/"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded me-2" href="https://www.linkedin.com/"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded" href="https://www.instagram.com/"><i class="fab fa-instagram fw-normal"></i></a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-light py-4" style="background: #051225;">
-        <div class="container">
-            <div class="row g-0">
-                <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Godavari Public School</a>. All Rights Reserved.</p>
-                </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0">Designed by: <a class="text-white border-bottom" href="https://htmlcodex.com">Mayuri,Snehal & Janhavi</a></p>
-                </div>
+</div>
+<div class="container-fluid text-light py-4" style="background: #051225;">
+    <div class="container">
+        <div class="row g-0">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="mb-md-0">&copy; <a class="text-white border-bottom" href="#">Godavari Public School</a>. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <p class="mb-0">Designed by: <a class="text-white border-bottom" href="https://htmlcodex.com">Mayuri,Snehal & Janhavi</a></p>
             </div>
         </div>
     </div>
-    <!-- Footer End -->
-
+</div>
+<!-- Footer End -->
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
 
@@ -328,27 +254,51 @@ include('connection.php');
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+     <script src="evo-calendar.min.js"></script>
+
+   <script>
+    $(document).ready(function() {
+        $('#calendar').evoCalendar({
+            theme:"Midnight Blue",
+            calendarEvents: [
+      {
+        id: 'event1', // Event's ID (required)
+        name: "New Year", // Event name (required)
+        date: "January/1/2023", // Event date (required)
+        description:"New Year's Day, First day of the new year, celebrated with religious, cultural, and social observances around the world. It is usually marked by rites and ceremonies that symbolize casting off the old year and rejoicing in the new.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Unit test 1",
+        badge: "02/13 - 02/15", // Event badge (optional)
+        date: ["February/13/2023", "February/15/2023"], // Date range
+        description: "Unit test 1", // Event description (optional)
+        type: "test",
+        color: "#63d867" // Event custom color (optional)
+      },
+      {
+        id: 'event2', // Event's ID (required)
+        name: "Women's Day", // Event name (required)
+        date: "March/8/2023", // Event date (required)
+        description:"International Women's Day (IWD) is a global holiday celebrated annually on March 8 as a focal point in the women's rights movement, bringing attention to issues such as gender equality, reproductive rights, and violence and abuse against women.",
+        type: "holiday", // Event type (required)
+        everyYear: true // Same event every year (optional)
+      },
+      {
+        name: "Unit test 2",
+        badge: "03/24 - 03/27", // Event badge (optional)
+        date: ["March/24/2023", "March/27/2023"], // Date range
+        description: "Unit test 2", // Event description (optional)
+        type: "test2",
+        color: "#63d867" // Event custom color (optional)
+      },
+    ]
+        })
+    })
+   </script>
 </body>
+
 </html>
-<?php
-if(isset($_POST['searchdata']))
-{
-$name = $_POST['name'];
-$comp = $_POST['comp'];
-
-
-$sql = "INSERT INTO complaint (name,comp) VALUES ('$name', '$comp')";
-
-if (mysqli_query($con, $sql)) 
-{
- echo "<script> alert('New record created successfully'); </script>";
-} 
-else 
-{
-  echo "Error: " . $sql . "<br>" . mysqli_error($con);
-}
-
-mysqli_close($con);
-
-}
-?>
